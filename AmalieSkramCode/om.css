@@ -1,0 +1,133 @@
+        /*alt dette er for html som trenger samme css*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #25282a;
+        }
+        p{
+            font-family: "Raleway";
+            color: white;
+            text-align: center;
+        }
+        /*-------------------------------------------*/
+
+        /*disse er for nav baren*/
+        .logo, li, a{
+            font-family: "Raleway";
+            font-weight: 500;
+            font-size: 20px;
+            color: #edf0f1;
+            text-decoration: none;
+            list-style: none;
+            background-color: rgb(53, 70, 83);
+        }
+
+        header{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 10%;
+            background-color: rgb(53, 70, 83);
+        }
+
+        .logoclass{
+            cursor: pointer;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .nav-link, li{
+            display: inline-block;
+            padding: 0px 20px;
+            background-color: rgb(53, 70, 83);
+        }
+        /*css'en nederst har hover i seg, så når cursor er over elementet vil den forandre fargen til den bestemte fargen*/
+        /*for at fargen skal forandre seg sakte bruker jeg transition, men ikke i hover css'en.
+        Da ville den med en gang gått til bake isteede for å forandre sakte*/
+        .nav-link, li, a{
+            transition: all 0.3s ease 0s;
+        }
+
+        .nav-link, li, a:hover{
+            color: #00a1a9;
+        }
+        /*------------------------------------------*/
+
+.div-1{
+    padding: 330px 10%;
+    background-color: rgb(36, 88, 108);
+}
+.p1{
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+
+.div-2{
+    padding: 140px 10%;
+    height: 530px;
+    background-color: rgb(27, 66, 81);
+    display: grid;
+    grid-template-columns: 550px 500px;
+    column-gap: 100px;
+
+}
+.p2{
+    display: inline-block;
+    width: 550px;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 200px;
+}
+.img-2{
+    width: 500px;
+    padding-top: 50px;
+}
+
+
+
+
+.div-3{
+    padding: 140px 10%;
+    height: 530px;
+    background-color: rgb(36, 88, 108);
+    
+}
+.p3{
+     display: inline-block;
+     width: 600px;
+     font-size: 20px;
+     font-weight: 500;
+     padding: 0px 25%;
+}
+.img-3{
+    margin-top: 40px;
+    width: 700px;
+    padding: 0px 20%;
+}
+
+
+
+.div-4{
+    padding: 140px 10%;
+    height: 530px;
+    background-color: rgb(27, 66, 81);
+}
+.p4{
+    display: inline-block;
+    width: 550px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0px 27%;
+    padding-top: 80px;
+}
+.img-4{
+    width: 700px;
+    padding: 0px 20%;
+}
+

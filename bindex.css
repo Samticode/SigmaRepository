@@ -1,0 +1,138 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/*------------Nav bar------------*/
+
+.head{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 10% 10% 10%;
+    column-gap: 10em;
+    background-color:rgba(56, 20, 90, 0.664);
+    padding-top: 2em;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    transition: all 0.5s ease 0.2s
+}
+a:hover{
+    color:rgb(110, 210, 127)
+}
+
+/*-------Første informasjon-------*/
+
+.logo-text{
+    padding: 0px 15%;
+    padding-top: 17em;
+    padding-bottom: 23.2em;
+    background-color:rgba(56, 20, 90, 0.664);
+}
+
+.logo{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "raleway";
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.descrip{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "raleway";
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.descrip-2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "raleway";
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+   
+/*-----Fag informasjon----------*/
+
+.top-text{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 3rem;
+    padding-top: 3em;
+}
+
+.line{
+    padding: 2.5em 5% 0;
+    width: 90%;
+}
+
+.fag-grid{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+    column-gap: 5em;
+    justify-content: center;
+    padding: 8em 10%;
+    padding-bottom: 12em;
+    
+}
+.fag{
+    background-color: rgba(223, 214, 174, 0.364);
+    border-radius: 2em;
+
+}
+.fag-navn{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.8rem;
+}
+.fag-desc{
+    padding-top: 1.2em;
+    color: black;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/*-------Mobilstyle----------*/
+
+@media (max-width: 580px){
+    .head{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 0em;
+        background-color:rgba(56, 20, 90, 0.664);
+        padding-top: 3em;}
+
+    .logo-text{
+        padding: 0px 15%;
+        padding-top: 10em;
+        padding-bottom: 16em;
+        background-color:rgba(56, 20, 90, 0.664);
+    }
+    .logo{
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-family: "raleway";
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+    .fag-grid{
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: 2fr;
+        row-gap: 4em;
+        justify-content: center;
+        padding: 4em 10%;
+        padding-bottom: 1em;
+    }
+}
+/*-------------------------------------*/

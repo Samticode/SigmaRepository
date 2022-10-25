@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:rgb(98, 131, 149);
+}
+/*------Stylen for bilde med farge som bakgrunn-----*/
+
+.background{
+    background-image:linear-gradient( rgb(54, 56, 46, 0.6),rgb(150, 137, 123, 0.6)), url(./Bilder/bilder.png);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/*-----Første informasjon og hjemknapp/logo------*/
+
+.logov{
+    display: inline-block;
+    padding-left: 1em;
+    padding-top: 1em;
+ }
+
+.top-text{
+    color: white;
+    font-family: "Raleway";
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    padding-top: 4em;
+}
+.descrip{
+    color: white;
+    font-family: "Raleway";
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 2em 0em 0em;
+}
+.descrip2{
+    padding-bottom: 6em;
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+    font-family: "Raleway";
+}
+
+/*-------Style for bilde og dato grid-------*/
+
+.odd{
+    background-color: rgb(54, 56, 46);
+    margin: 2em 2em;
+}
+.odd-text{
+    color: rgb(236, 248, 248);
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Raleway";
+    font-weight: 400;
+    padding-top: 0.5em;
+}
+.odd-grid{
+    display: grid;
+    grid-template-columns:30% 30%;
+    column-gap: 7em;
+    row-gap: 3em;
+    justify-content: center;
+    padding: 2em 0;
+}
+.odd-bilde{
+    width: 100%
+}
+
+
+.even{
+    background-color: rgb(236, 248, 248);
+    margin: 2em 2em;
+}
+.even-text{
+    color: rgb(54, 56, 46);
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Raleway";
+    font-weight: 400;
+    padding-top: 0.5em;
+}
+.even-grid{
+    display: grid;
+    grid-template-columns:30% 30%;
+    column-gap: 7em;
+    row-gap: 3em;
+    justify-content: center;
+    padding: 2em 0;
+}
+.even-bilde{
+    width: 100%
+}
+
+/*----------------------------------*/
+
+@media (max-width:580px){
+    .top-text{
+        color: white;
+        font-family: "Raleway";
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 500;
+        padding-top: 4em;
+    }
+    .descrip2{
+        padding-bottom: 12em;
+        font-size: 1.3rem;
+        text-align: center;
+        color: white;
+        font-family: "Raleway";
+    }
+    .even{
+        background-color: rgb(236, 248, 248);
+        margin: 4em 2em;
+    }
+    .even-grid{
+        display: grid;
+        grid-template-columns:40% 40%;
+        column-gap: 3em;
+        row-gap: 3em;
+        justify-content: center;
+        padding: 2em 0;
+    }
+    .odd{
+        background-color: rgb(54, 56, 46);
+        margin: 4em 2em;
+    }
+    .odd-grid{
+        display: grid;
+        grid-template-columns:40% 40%;
+        column-gap: 3em;
+        row-gap: 3em;
+        justify-content: center;
+        padding: 2em 0;
+    }
+}

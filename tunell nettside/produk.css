@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:rgb(150, 137, 123);
+}
+/*------Stylen for bilde med farge som bakgrunn-----*/
+
+.background{
+    background-image:linear-gradient( rgb(150, 137, 123, 0.6),rgb(150, 137, 123, 0.6)), url(./Bilder/blomst.png);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/*-----Første informasjon og hjemknapp/logo------*/
+
+.logov{
+    display: inline-block;
+    padding-left: 1em;
+    padding-top: 1em;
+ }
+
+.top-text{
+    color: white;
+    font-family: "Raleway";
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    padding-top: 4em;
+}
+.descrip{
+    color: white;
+    font-family: "Raleway";
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 2em;
+    padding-bottom: 7em;
+}
+
+/*-To knapper til en side for bilder og en side for videoer-*/
+
+.grid{
+    display: grid;
+    margin: 3em 1em;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 1.5em;
+}
+.bilder, .filmer{
+    background-color:rgb(223, 213, 165);
+    padding: 3em 0;
+    border-radius: 20px;
+}
+.bilder:hover{
+    background-color:rgb(172, 165, 130);
+}
+.filmer:hover{
+    background-color:rgb(172, 165, 130);
+}
+
+.bild-os{
+    text-align: center;
+    color: rgb(98, 131, 149);
+    font-family: "Raleway";
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+.film-os{
+    text-align: center;
+    color: rgb(98, 131, 149);
+    font-family: "Raleway";
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+a{
+    text-decoration: none;
+}
+/*----------------------------------*/
+@media (max-width:580px){
+    .top-text{
+        color: white;
+        font-family: "Raleway";
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 500;
+        padding-top: 1.5em;
+    }
+    .descrip{
+        color: white;
+        font-family: "Raleway";
+        text-align: center;
+        font-size: 1.3rem;
+        padding-top: 2em;
+        padding-bottom: 4.5em;
+    }
+    .grid{
+        display: grid;
+        margin: 1em 3em 0em;
+        grid-template-columns: 2fr 2fr;
+        column-gap: 1.5em;
+    }
+    .bilder, .filmer{
+        background-color:rgb(223, 213, 165);
+        padding: 4em 0;
+        border-radius: 20px;
+    }
+}

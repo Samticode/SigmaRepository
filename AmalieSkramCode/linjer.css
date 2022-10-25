@@ -1,0 +1,102 @@
+        /*alt dette er for html som trenger samme css*/
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: #25282a;
+        }
+
+        p{
+            font-family: "Raleway";
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .a-img{
+            background-color: #25282a;
+        }
+        /*-------------------------------------------*/
+
+        /*disse er for nav baren*/
+        .logo, li, a{
+            font-family: "Raleway";
+            font-weight: 500;
+            font-size: 20px;
+            color: #edf0f1;
+            text-decoration: none;
+            list-style: none; 
+            background-color: rgb(53, 70, 83);
+        }
+
+        header{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 10%;
+            background-color: rgb(53, 70, 83);
+        }
+
+        .logoclass{
+            cursor: pointer;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .nav-link, li{
+            display: inline-block;
+            padding: 0px 20px;
+            background-color: rgb(53, 70, 83);
+        }
+        /*css'en nederst har hover i seg, så når cursor er over elementet vil den forandre fargen til den bestemte fargen*/
+        /*for at fargen skal forandre seg sakte bruker jeg transition, men ikke i hover css'en.
+        Da ville den med en gang gått til bake isteede for å forandre sakte*/
+        .nav-link, li, a{
+            transition: all 0.3s ease 0s;
+        }
+
+        .nav-link, li, a:hover{
+            color: #00a1a9;
+        }
+        /*------------------------------------------*/
+        
+.grid-div{
+    padding: 100px 10%;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 320px;
+    row-gap: 100px;
+}
+
+
+.ssr-div{
+    width: 100%;
+    display: inline-block;
+}
+
+.ssr-img{
+    width: 100%;
+}
+
+.ssr-text{
+padding-top: 50px;
+text-align: center;
+}
+
+
+.grid-div2{
+    display: grid;
+    grid-template-columns: 400px
+}
+.ss-div{
+    width: 400px;
+    padding-left: 36%;
+    padding-bottom: 50px;
+}
+.ss-img{
+    width: 400px;
+}
+.ss-text{
+    width: 400px;
+    padding-top:50px;
+    text-align: center;
+}
